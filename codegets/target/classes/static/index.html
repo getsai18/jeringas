@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Usuarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        input, button {
+            padding: 6px;
+            margin: 5px;
+        }
+        .error {
+            color: red;
+            margin-top: 5px;
+        }
+        .success {
+            color: green;
+            margin-top: 5px;
+        }
+        .user-card {
+            border: 1px solid #aaa;
+            padding: 10px;
+            margin-top: 10px;
+            width: 260px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Gestión de Usuarios (Demo)</h1>
+
+<hr>
+
+<h2>Crear Usuario</h2>
+<input id="name" type="text" placeholder="Nombre">
+<br>
+<input id="email" type="text" placeholder="Correo">
+<br>
+<button onclick="createUser()">Crear</button>
+<p id="create-msg"></p>
+
+<hr>
+
+<h2>Buscar Usuario por ID</h2>
+<input id="userId" type="number" placeholder="ID">
+<button onclick="getUser()">Buscar</button>
+<div id="user-result"></div>
+
+<hr>
+
+<h2>Listar Usuarios</h2>
+<button onclick="loadUsers()">Cargar Lista</button>
+<div id="user-list"></div>
+
